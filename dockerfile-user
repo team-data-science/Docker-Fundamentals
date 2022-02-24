@@ -1,0 +1,10 @@
+FROM python:3.9
+
+COPY requirements.txt /tmp/
+
+RUN pip install --no-cache-dir --upgrade pip && \
+    pip install --requirement /tmp/requirements.txt
+
+copy ./src/hello-faked-person.py /src/hello-faked-person.py
+
+ENTRYPOINT ["python","./src/hello-faked-person.py"]
