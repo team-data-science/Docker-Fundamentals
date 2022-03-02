@@ -2,7 +2,7 @@
  Docker Course Repo
 
 ## Build simple hello world image
-build -t hello-world .
+docker build -t hello-world .
 
 ## build fake user print image
 docker build -f dockerfile-user -t hello-user .
