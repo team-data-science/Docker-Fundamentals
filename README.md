@@ -8,9 +8,9 @@ docker build -t hello-world .
 docker build -f dockerfile-user -t hello-user .
 
 ## build image for repo and push
-docker build -f dockerfile-user -t learndataengineering/my-repo:latest
+docker build -f dockerfile-user -t learndataengineering/hello-user:latest
 
-docker push  learndataengineering/my-repo:latest
+docker push  learndataengineering/hello-user:latest
 
 
 ## remove image and pull new from repository
