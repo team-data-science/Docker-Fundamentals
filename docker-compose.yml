@@ -3,11 +3,12 @@ version: '3'
 services:
   
   portainer:
-    image: portainer/portainer-ce:latest
+    image: portainer/portainer-ce:2.11.1
     container_name: portainer
     restart: on-failure
     ports:
       - 9443:9443
+      - 9000:9000
       - 8000:8000
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
